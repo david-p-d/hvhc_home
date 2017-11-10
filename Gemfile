@@ -11,7 +11,7 @@ gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
 #heroku uses Posgres database
-gem 'pg'
+gem 'pg', group: :production
 #factor 12 needed for heroku
 gem 'rails_12factor', group: :production
 # Use Puma as the app server
