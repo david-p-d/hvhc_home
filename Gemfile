@@ -16,10 +16,11 @@ gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
-#USe Materialize as a framework rather than Boostrap
-gem 'materialize-sass', '~> 0.96.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+#USe Materialize as a framework rather than Boostrap
+gem 'materialize-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
