@@ -14,7 +14,8 @@ gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
-
+gem 'jquery-rails'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 #USe Materialize as a framework rather than Boostrap
