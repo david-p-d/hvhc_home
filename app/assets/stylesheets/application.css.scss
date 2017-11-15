@@ -10,24 +10,10 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *= require_self
-<<<<<<< HEAD
-<<<<<<< HEAD
  *= require_tree .
  */
   @import "bootstrap-sprockets";
   @import 'bootstrap';
+  @import "font-awesome-sprockets";
   @import "font-awesome";
   @import 'pages.scss';
-=======
-=======
->>>>>>> c6004bb24334bcd5b0bec3ac4263cf18f50614d3
- *= require_tree
-*/
-@import "bootstrap-sprockets";
-@import 'bootstrap';
-@import "font-awesome";
-@import 'pages.scss';
-<<<<<<< HEAD
->>>>>>> c6004bb24334bcd5b0bec3ac4263cf18f50614d3
-=======
->>>>>>> c6004bb24334bcd5b0bec3ac4263cf18f50614d3
