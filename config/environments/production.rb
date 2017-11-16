@@ -29,7 +29,8 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
-
+  #Set up device to work in production by providing host name
+  config.action_mailer.default_url_options = { host: 'https://hvhc-home.herokuapp.com/'}
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
