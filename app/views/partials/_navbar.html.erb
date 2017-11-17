@@ -2,7 +2,6 @@
 
 <div class="container">
   <nav class="navbar-nav navbar-expand-lg navbar-light bg-light fixed-top">
-
     <a class="navbar-brand" href="/pages/home"><%= image_tag("logo.png", :alt =>"HVHC") %></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,8 +25,15 @@
           <li class="nav-item">
             <%= link_to "Submission Tracker", "/pages/submission_tracker", :class => "nav-link" %>
           </li>
-        </li>
-      </ul>
+        </ul>
     </div>
+    <% if user_signed_in? %>
+    Logged in as <strong><%= current_user.email %></strong>
+    <%= link_to "Edit Profile", edit_user_registration_path %> |
+    <%= link_to "Sign Out", destroy_user_session_path, :method => :delete%>
+    <% else %>
+    <%= link_to "Sign up", new_user_registration_path %>
+    <%= link_to "Sign In", new_user_session_path %>
+    <% end %>
   </div>
 </nav>
