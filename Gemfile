@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 
 gem 'devise'
+gem 'devise-bootstrap-views'
 #Gem devise is dependent upon bcyrpt
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 # Use Capistrano for deployment

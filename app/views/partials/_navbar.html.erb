@@ -8,9 +8,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar navbar-nav ml-auto">
-        <!-- Displays devise notice of successfull sign in and sign out and user already in database etc -->
-        <li class="notice"><%= notice %></li>
-          <li class="alert"><%= alert %></li>
+
 
         <li class="nav-item">
           <a class="nav-link" href="#">Our People</a>
@@ -31,7 +29,6 @@
           </li>
           <li>
             <% if user_signed_in? %>
-
           Logged in as <strong><%= current_user.email %></strong>
           <%= link_to "Edit Profile  ", edit_user_registration_path %> |
           <%= link_to "Sign Out", destroy_user_session_path, :method => :delete%>
@@ -42,13 +39,11 @@
 
           </li>
         </ul>
-
-
-
   </div>
-
-
   </div>
-
 </div>
 </nav>
+<br /><br />
+<!-- Displays devise notice of successfull sign in and sign out and user already in database etc -->
+<div class="notice"><%= notice %></div>
+  <div class="alert"><%= alert %></div>
