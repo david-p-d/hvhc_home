@@ -11,13 +11,12 @@
   </head>
 
   <body>
-<!-- following two lines is used by devise authentication to display messages -->
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
     <%= render partial: 'partials/navbar' %>
 
     <%= yield %>
+
   <%= render partial: 'partials/footer' %>
+
   </body>
 </html>
