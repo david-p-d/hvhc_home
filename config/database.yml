@@ -22,4 +22,7 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: hvhc-home
+  adapter: postgresql
+  host: https://hvhc-home.herokuapp.com/
+  password: 

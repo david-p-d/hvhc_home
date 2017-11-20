@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  
+
   devise_for :users
+  get 'users/sign_up'
   get 'pages/submission_tracker'
   get 'pages/home'
   root "pages#home"
