@@ -7,27 +7,27 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar navbar-nav ml-auto">
+      <ul class="navbar navbar-nav ml-auto" >
 
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Our People</a>
+        <li class="nav-item" >
+          <a class="nav-link" style="text-shadow: 1px 1px 1px #272634;"href="#">Our People</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Our Work</a>
+          <a class="nav-link" style="text-shadow: 1px 1px 1px #272634;"href="#">Our Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Why HVHC?</a>
+          <a class="nav-link" style="text-shadow: 1px 1px 1px #272634;"href="#">Why HVHC?</a>
           <li class="nav-item">
-            <a class="nav-link" href="#">Resource Portal</a>
+            <a class="nav-link"style="text-shadow: 1px 1px 1px #272634;" href="#">Resource Portal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Member Tools</a>
+            <a class="nav-link" style="text-shadow: 1px 1px 1px #272634;"href="#">Member Tools</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="text-shadow: 1px 1px 1px #272634;">
             <%= link_to "Submission Tracker", "/pages/submission_tracker", :class => "nav-link" %>
           </li>
-          <li>
+          <li style="font-size: 2em;">
             <% if user_signed_in? %>
           Logged in as <strong><%= current_user.email %></strong>
           <%= link_to "Edit Profile  ", edit_user_registration_path %> |
