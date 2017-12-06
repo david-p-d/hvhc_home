@@ -1,0 +1,2 @@
+module TableSubmissionsHelper
+end

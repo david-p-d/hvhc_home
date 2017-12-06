@@ -1,0 +1,2 @@
+class TableSubmission < ApplicationRecord
+end

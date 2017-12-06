@@ -10,7 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171115191542) do
+ActiveRecord::Schema.define(version: 20171205194520) do
+
+  create_table "members", force: :cascade do |t|
+    t.integer "Prov_Number"
+    t.string "name"
+    t.string "city"
+    t.string "state"
+    t.integer "bed_count"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "table_submissions", force: :cascade do |t|
+    t.string "OrganizationID"
+    t.string "SubmissionType"
+    t.string "SubmissionSubType"
+    t.string "submissionStartDate"
+    t.string "submissionEndDate"
+    t.string "FileSpecVersion"
+    t.integer "resubmitNumber"
+    t.string "Load_YN"
+    t.string "Load_Status"
+    t.datetime "InsertDateTime"
+    t.text "SubmissionComments"
+    t.string "ASC_Cohorts"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
